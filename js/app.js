@@ -13,6 +13,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const hudCounterTotal = document.getElementById('hudCounterTotal');
     const gridViewOverlay = document.getElementById('gridViewOverlay');
     const gridViewCards = document.getElementById('gridViewCards');
+
+    // Lightbox elements
+    const lightboxOverlay = document.getElementById('imageLightbox');
+    const lightboxImage = lightboxOverlay ? lightboxOverlay.querySelector('.lightbox-image') : null;
+    const lightboxClose = lightboxOverlay ? lightboxOverlay.querySelector('.lightbox-close') : null;
     
     // Initializing HUD
     if (hudCounterTotal) hudCounterTotal.textContent = totalSlides;
@@ -94,6 +99,12 @@ document.addEventListener('DOMContentLoaded', () => {
     // ==========================================================================
     document.addEventListener('keydown', (e) => {
         // If grid view is open, Escape should close it
+        // Priority: lightbox > grid view > slide navigation
+        if (lightboxOverlay && lightboxOverlay.classList.contains('active') && e.key === 'Escape') {
+            closeLightbox();
+            return;
+        }
+
         if (gridViewOverlay.classList.contains('active') && e.key === 'Escape') {
             closeGridView();
             return;
@@ -147,11 +158,14 @@ document.addEventListener('DOMContentLoaded', () => {
     document.addEventListener('touchstart', (e) => {
         // Avoid conflict with grid view overlay
         if (gridViewOverlay.classList.contains('active')) return;
+        // Avoid conflict with lightbox overlay
+        if (lightboxOverlay && lightboxOverlay.classList.contains('active')) return;
         touchStartX = e.changedTouches[0].screenX;
     }, false);
-    
+
     document.addEventListener('touchend', (e) => {
         if (gridViewOverlay.classList.contains('active')) return;
+        if (lightboxOverlay && lightboxOverlay.classList.contains('active')) return;
         touchEndX = e.changedTouches[0].screenX;
         handleSwipe();
     }, false);
@@ -222,6 +236,52 @@ document.addEventListener('DOMContentLoaded', () => {
             gridViewOverlay.classList.remove('active');
         }
     };
+
+    // ==========================================================================
+    // Image Lightbox Zoom
+    // ==========================================================================
+    function openLightbox(imageSrc, imageAlt, neonColor) {
+        if (!lightboxOverlay || !lightboxImage) return;
+        lightboxImage.src = imageSrc;
+        lightboxImage.alt = imageAlt || '';
+        if (neonColor) {
+            lightboxOverlay.style.setProperty('--neon-color', neonColor);
+        }
+        lightboxOverlay.classList.add('active');
+    }
+
+    function closeLightbox() {
+        if (lightboxOverlay) {
+            lightboxOverlay.classList.remove('active');
+            // Clear stale neon color so next open sets fresh value
+            lightboxOverlay.style.removeProperty('--neon-color');
+        }
+    }
+
+    window.closeLightbox = closeLightbox;
+
+    // Bind click on all slide images
+    if (lightboxOverlay) {
+        document.querySelectorAll('.slide-image').forEach(img => {
+            img.addEventListener('click', () => {
+                const slide = img.closest('.slide');
+                const neonColor = slide
+                    ? getComputedStyle(slide).getPropertyValue('--neon-color').trim()
+                    : '';
+                openLightbox(img.src, img.alt, neonColor);
+            });
+        });
+
+        // Close on overlay background click
+        lightboxOverlay.addEventListener('click', (e) => {
+            if (e.target === lightboxOverlay) closeLightbox();
+        });
+
+        // Close on X button
+        if (lightboxClose) {
+            lightboxClose.addEventListener('click', closeLightbox);
+        }
+    }
 
     // ==========================================================================
     // Fullscreen Guard API
