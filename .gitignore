@@ -1,0 +1,13 @@
+# Dependencies
+node_modules/
+
+# Build artifacts
+package.json
+package-lock.json
+export-pdf.mjs
+
+# OS files
+.DS_Store
+
+# Python venv (from ai-multimodal skill)
+images/venv-ai-multimodal/

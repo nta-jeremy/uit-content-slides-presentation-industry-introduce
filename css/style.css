@@ -1,0 +1,709 @@
+/* ==========================================================================
+   UIT SLIDE PRESENTATION DESIGN SYSTEM
+   Phong cách: Neo-Brutalism & Premium Glassmorphism (Cyber-Tech Dark Mode)
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+:root {
+    /* Color Palette */
+    --bg-dark: #040407;
+    --bg-card: rgba(255, 255, 255, 0.03);
+    --border-glass: rgba(255, 255, 255, 0.09);
+    
+    /* Neon Accents */
+    --neon-cyan: #00f2fe;
+    --neon-blue: #4facfe;
+    --neon-pink: #ff007f;
+    --neon-purple: #7f00ff;
+    --neon-green: #00ff87;
+    --neon-yellow: #ffe600;
+    --neon-gold: #ff9a9e;
+    
+    /* Primary Text */
+    --text-main: #f3f4f6;
+    --text-muted: #9ca3af;
+    
+    /* Fonts */
+    --font-heading: 'Bricolage Grotesque', 'Space Grotesk', sans-serif;
+    --font-subheading: 'Space Grotesk', sans-serif;
+    --font-body: 'Be Vietnam Pro', sans-serif;
+}
+
+/* ==========================================================================
+   Base Reset
+   ========================================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-main);
+    font-family: var(--font-body);
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ==========================================================================
+   Background Hologram Glowing Spots
+   ========================================================================== */
+.glowing-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.glow-spot {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(140px);
+    opacity: 0.15;
+    mix-blend-mode: screen;
+    animation: floatGlow 20s infinite alternate;
+}
+
+.glow-spot-1 {
+    width: 40vw;
+    height: 40vw;
+    background: radial-gradient(circle, var(--neon-purple) 0%, transparent 70%);
+    top: -10%;
+    left: -10%;
+}
+
+.glow-spot-2 {
+    width: 45vw;
+    height: 45vw;
+    background: radial-gradient(circle, var(--neon-cyan) 0%, transparent 70%);
+    bottom: -15%;
+    right: -10%;
+    animation-delay: -5s;
+}
+
+.glow-spot-3 {
+    width: 35vw;
+    height: 35vw;
+    background: radial-gradient(circle, var(--neon-pink) 0%, transparent 70%);
+    top: 30%;
+    right: 20%;
+    animation-delay: -10s;
+}
+
+@keyframes floatGlow {
+    0% { transform: translate(0, 0) scale(1); }
+    100% { transform: translate(50px, 40px) scale(1.1); }
+}
+
+/* ==========================================================================
+   16:9 Presentation Canvas Container (Aspect Ratio Guard)
+   ========================================================================== */
+.slide-deck {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    max-width: 177.78vh; /* 16:9 aspect ratio ratio on height */
+    max-height: 56.25vw; /* 16:9 aspect ratio ratio on width */
+    background: rgba(4, 4, 7, 0.95);
+    border: 3px solid rgba(255, 255, 255, 0.05);
+    box-shadow: 0 25px 70px rgba(0, 0, 0, 0.8);
+    overflow: hidden;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 768px) {
+    /* Responsive for smaller screens */
+    .slide-deck {
+        max-width: 100vw;
+        max-height: 100vh;
+        border: none;
+    }
+}
+
+/* ==========================================================================
+   Slide Shell & Transitions
+   ========================================================================== */
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    padding: 5% 6%;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 10;
+    transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1), 
+                transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    transform: scale(0.96) translateY(10px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.slide.active {
+    opacity: 1;
+    visibility: visible;
+    z-index: 20;
+    transform: scale(1) translateY(0);
+}
+
+.slide-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    overflow: hidden;
+}
+
+/* ==========================================================================
+   Brutalist & Glassmorphic Component Styles
+   ========================================================================== */
+.glass-panel {
+    background: var(--bg-card);
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+    border: 1px solid var(--border-glass);
+    border-radius: 12px;
+    padding: 30px;
+    position: relative;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.glass-panel:hover {
+    border-color: rgba(255, 255, 255, 0.15);
+}
+
+/* Neo-Brutalist Card Accent */
+.brutalist-card {
+    background: #0d0d16;
+    border: 3px solid var(--border-color, var(--neon-cyan));
+    box-shadow: 6px 6px 0px var(--border-color, var(--neon-cyan));
+    border-radius: 0;
+    padding: 25px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.brutalist-card:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 8px 8px 0px var(--border-color, var(--neon-cyan));
+}
+
+/* Header Slide Title */
+.slide-header {
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.slide-category {
+    font-family: var(--font-subheading);
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: var(--neon-color, var(--neon-cyan));
+    margin-bottom: 6px;
+}
+
+.slide-title {
+    font-family: var(--font-heading);
+    font-size: clamp(1.8rem, 3.5vw, 3rem);
+    font-weight: 800;
+    line-height: 1.15;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    background: linear-gradient(135deg, #ffffff 30%, var(--neon-color, var(--neon-cyan)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* ==========================================================================
+   Layout Patterns: Split Screen, Grids, Quotes
+   ========================================================================== */
+
+/* 2-Column Split Layout */
+.slide-split {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 40px;
+    align-items: center;
+    height: 100%;
+}
+
+@media (max-width: 768px) {
+    .slide-split {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
+
+/* Slide Text Lists & Details */
+.list-unstyled {
+    list-style: none;
+}
+
+.slide-list li {
+    position: relative;
+    padding-left: 28px;
+    margin-bottom: 18px;
+    font-size: clamp(0.95rem, 1.5vw, 1.2rem);
+    line-height: 1.6;
+    color: var(--text-main);
+}
+
+.slide-list li::before {
+    content: "■";
+    position: absolute;
+    left: 0;
+    top: 2px;
+    color: var(--neon-color, var(--neon-cyan));
+    font-size: 0.9rem;
+    transition: transform 0.3s ease;
+}
+
+.slide-list li strong {
+    color: #ffffff;
+    font-weight: 600;
+}
+
+/* Bullet item hover effect */
+.slide-list li:hover::before {
+    transform: rotate(45deg) scale(1.2);
+}
+
+/* Grid Layout (e.g. Slide 2 Table of Contents or Feature Grids) */
+.slide-grid-3x4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 15px;
+    height: 100%;
+}
+
+.grid-item-index {
+    font-family: var(--font-subheading);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--item-color, var(--neon-cyan));
+    margin-bottom: 5px;
+}
+
+.grid-item-text {
+    font-size: 0.9rem;
+    font-weight: 500;
+    line-height: 1.3;
+}
+
+.feature-grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.feature-grid-4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.feature-grid-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+@media (max-width: 768px) {
+    .slide-grid-3x4 { grid-template-columns: repeat(2, 1fr); grid-template-rows: auto; }
+    .feature-grid-3 { grid-template-columns: 1fr; }
+    .feature-grid-4 { grid-template-columns: repeat(2, 1fr); }
+    .feature-grid-2 { grid-template-columns: 1fr; }
+}
+
+/* Quotes Styling */
+.quote-box {
+    border-left: 5px solid var(--neon-color, var(--neon-pink));
+    padding: 20px 30px;
+    background: rgba(255, 0, 127, 0.03);
+    margin: 25px 0;
+}
+
+.quote-text {
+    font-family: var(--font-subheading);
+    font-style: italic;
+    font-size: clamp(1.1rem, 2vw, 1.6rem);
+    line-height: 1.5;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.quote-author {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--neon-color, var(--neon-pink));
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* ==========================================================================
+   Image Container (Guarantees NO Distortion or Clipping)
+   ========================================================================== */
+.slide-image-container {
+    width: 100%;
+    height: 100%;
+    max-height: 380px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    border: 3px solid rgba(255, 255, 255, 0.08);
+    background: rgba(0, 0, 0, 0.4);
+    box-shadow: inset 0 0 20px rgba(0,0,0,0.8);
+}
+
+.slide-image-container.brutalist {
+    border: 3px solid var(--neon-color, var(--neon-cyan));
+    box-shadow: 6px 6px 0px var(--neon-color, var(--neon-cyan));
+    background: #05050a;
+}
+
+.slide-image-container.polaroid {
+    background: #ffffff;
+    padding: 12px 12px 35px 12px;
+    border: 1px solid rgba(0,0,0,0.15);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+    transform: rotate(-3deg);
+    max-height: 300px;
+}
+
+.slide-image-container.polaroid img {
+    border: 1px solid rgba(0,0,0,0.1);
+}
+
+/* Core constraint rules for perfectly preserving image ratios */
+.slide-image {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain; /* CRITICAL: Prevents stretching/distortion */
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.slide-image-container:hover .slide-image {
+    transform: scale(1.02);
+}
+
+.polaroid-caption {
+    font-family: var(--font-heading);
+    font-size: 0.95rem;
+    color: #111111;
+    font-weight: 800;
+    text-align: center;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+
+/* ==========================================================================
+   Metrics & Dashboard Card Styles
+   ========================================================================== */
+.metric-card {
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.metric-value {
+    font-family: var(--font-heading);
+    font-size: clamp(2rem, 3.5vw, 3.2rem);
+    font-weight: 800;
+    line-height: 1;
+    margin-bottom: 5px;
+    color: var(--metric-color, var(--neon-cyan));
+    text-shadow: 0 0 20px rgba(0, 242, 254, 0.2);
+}
+
+.metric-label {
+    font-family: var(--font-subheading);
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* ==========================================================================
+   Slide Footer
+   ========================================================================== */
+.slide-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    padding-top: 15px;
+    font-family: var(--font-subheading);
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+    color: var(--text-muted);
+}
+
+.footer-logo {
+    font-weight: 700;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.footer-logo::before {
+    content: "■";
+    color: var(--neon-cyan);
+}
+
+/* ==========================================================================
+   Interactive Navigation Interface Elements
+   ========================================================================== */
+
+/* Progress Bar indicator */
+.progress-bar-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: rgba(255, 255, 255, 0.05);
+    z-index: 100;
+}
+
+.progress-bar-fill {
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(90deg, var(--neon-cyan), var(--neon-purple), var(--neon-pink));
+    transition: width 0.3s ease;
+}
+
+/* Interactive Navigation Bar (HUD style) */
+.hud-nav {
+    position: fixed;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: rgba(10, 10, 15, 0.6);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 30px;
+    padding: 8px 18px;
+    z-index: 100;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.hud-btn {
+    background: transparent;
+    border: none;
+    color: var(--text-muted);
+    font-size: 1.1rem;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.hud-btn:hover {
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.hud-btn.active {
+    color: var(--neon-cyan);
+}
+
+.hud-counter {
+    font-family: var(--font-subheading);
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #ffffff;
+    padding: 0 10px;
+}
+
+/* ==========================================================================
+   Grid View Overlay (Visual Map of 25 Slides)
+   ========================================================================== */
+.grid-view-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(4, 4, 7, 0.98);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    z-index: 500;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s ease;
+}
+
+.grid-view-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.grid-view-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    padding-bottom: 15px;
+}
+
+.grid-view-title {
+    font-family: var(--font-heading);
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background: linear-gradient(135deg, #ffffff, var(--neon-purple));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.grid-view-close {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+}
+
+.grid-view-close:hover {
+    background: var(--neon-pink);
+    border-color: var(--neon-pink);
+    transform: rotate(90deg);
+}
+
+.grid-view-cards {
+    flex-grow: 1;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    overflow-y: auto;
+    padding-right: 10px;
+}
+
+/* Custom scrollbar for Grid View */
+.grid-view-cards::-webkit-scrollbar {
+    width: 6px;
+}
+
+.grid-view-cards::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 3px;
+}
+
+.grid-card {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 8px;
+    aspect-ratio: 16/9;
+    padding: 15px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+.grid-card:hover {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: var(--card-glow, var(--neon-cyan));
+    transform: translateY(-4px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.grid-card.active {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: var(--neon-green);
+    box-shadow: 0 0 15px rgba(0, 255, 135, 0.15);
+}
+
+.grid-card-num {
+    font-family: var(--font-subheading);
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--card-glow, var(--neon-cyan));
+}
+
+.grid-card-title {
+    font-family: var(--font-subheading);
+    font-size: 0.85rem;
+    font-weight: 600;
+    line-height: 1.3;
+    color: #ffffff;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* ==========================================================================
+   Micro-Animations on Slide Activate
+   ========================================================================== */
+.slide .animate-element {
+    opacity: 0;
+    transform: translateY(15px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.slide.active .animate-element {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Stagger delays for beautiful cascading appearance */
+.slide.active .del-1 { transition-delay: 0.1s; }
+.slide.active .del-2 { transition-delay: 0.2s; }
+.slide.active .del-3 { transition-delay: 0.3s; }
+.slide.active .del-4 { transition-delay: 0.4s; }
+.slide.active .del-5 { transition-delay: 0.5s; }
+.slide.active .del-6 { transition-delay: 0.6s; }
+.slide.active .del-7 { transition-delay: 0.7s; }
+.slide.active .del-8 { transition-delay: 0.8s; }

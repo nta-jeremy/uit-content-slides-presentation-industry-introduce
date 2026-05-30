@@ -1,0 +1,1338 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giới thiệu ngành Công nghệ Thông tin - UIT</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Hologram Glow Spot Backgrounds -->
+    <div class="glowing-bg">
+        <div class="glow-spot glow-spot-1"></div>
+        <div class="glow-spot glow-spot-2"></div>
+        <div class="glow-spot glow-spot-3"></div>
+    </div>
+
+    <!-- Presentation Progress Bar -->
+    <div class="progress-bar-container">
+        <div class="progress-bar-fill" id="progressBarFill"></div>
+    </div>
+
+    <!-- Main Presentation Container (Locks to 16:9 Aspect Ratio) -->
+    <div class="slide-deck">
+
+        <!-- SLIDE 1: TRANG BÌA -->
+        <div class="slide" style="--neon-color: var(--neon-cyan)">
+            <div class="slide-content">
+                <div class="slide-split">
+                    <div class="glass-panel animate-element del-1">
+                        <div class="slide-category">BÁO CÁO TIỂU LUẬN CUỐI KỲ</div>
+                        <h1 class="slide-title" style="margin-bottom: 20px; font-size: 2.8rem;">GIỚI THIỆU NGÀNH<br>CÔNG
+                            NGHỆ THÔNG TIN</h1>
+
+                        <div style="margin-bottom: 25px; line-height: 1.6; font-size: 0.95rem;">
+                            <p
+                                style="color: var(--neon-cyan); font-weight: 700; text-transform: uppercase; letter-spacing: 1px;">
+                                Giảng viên hướng dẫn:</p>
+                            <p style="color: #ffffff; font-weight: 600; font-size: 1.1rem; margin-bottom: 10px;">Th.S.
+                                Nguyễn Thị Thuỳ Trâm</p>
+                            <p style="color: var(--text-muted); font-size: 0.85rem;">Trường Đại học Công nghệ Thông tin
+                                – ĐHQG-HCM</p>
+                        </div>
+
+                        <div class="glass-panel"
+                            style="background: rgba(255,255,255,0.02); padding: 15px; border-radius: 8px; text-align: left;">
+                            <p
+                                style="font-weight: 700; font-size: 0.85rem; color: var(--neon-blue); text-transform: uppercase; margin-bottom: 12px; letter-spacing: 1px;">
+                                Thành viên nhóm thực hiện:</p>
+                            <div style="display: grid; grid-template-columns: 1fr 1.3fr; gap: 15px;">
+                                <!-- Cột 1: Nhiệm vụ chính -->
+                                <div style="border-right: 1px solid rgba(255,255,255,0.08); padding-right: 15px;">
+                                    <p
+                                        style="font-size: 0.75rem; color: var(--neon-cyan); font-weight: 700; text-transform: uppercase; margin-bottom: 8px; letter-spacing: 0.5px;">
+                                        Nhiệm vụ chính:</p>
+                                    <ul class="list-unstyled"
+                                        style="font-size: 0.75rem; line-height: 1.5; color: var(--text-muted);">
+                                        <li style="margin-bottom: 8px;">
+                                            • <strong style="color: #fff">Nguyễn Tùng Anh</strong> <span
+                                                style="font-size: 0.65rem; opacity: 0.8;">(26730006)</span>
+                                            <div
+                                                style="color: var(--neon-cyan); font-size: 0.68rem; padding-left: 8px; font-weight: 600; line-height: 1.2;">
+                                                Nhóm trưởng - Phân công, theo dõi tiến độ, tổng hợp nội dung</div>
+                                        </li>
+                                        <li style="margin-bottom: 8px;">
+                                            • <strong style="color: #fff">Trần Minh Lợi</strong> <span
+                                                style="font-size: 0.65rem; opacity: 0.8;">(26730044)</span>
+                                            <div
+                                                style="color: var(--neon-blue); font-size: 0.7rem; padding-left: 8px; font-weight: 600;">
+                                                Báo cáo nội dung</div>
+                                        </li>
+                                        <li style="margin-bottom: 8px;">
+                                            • <strong style="color: #fff">Nguyễn Hồ Dương Phú</strong> <span
+                                                style="font-size: 0.65rem; opacity: 0.8;">(26730055)</span>
+                                            <div
+                                                style="color: var(--neon-pink); font-size: 0.7rem; padding-left: 8px; font-weight: 600;">
+                                                Cắt ghép video</div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- Cột 2: Đóng góp tài liệu & Tìm kiếm ý tưởng -->
+                                <div>
+                                    <p
+                                        style="font-size: 0.75rem; color: var(--neon-green); font-weight: 700; text-transform: uppercase; margin-bottom: 8px; letter-spacing: 0.5px;">
+                                        Tài liệu & Ý tưởng:</p>
+                                    <div
+                                        style="display: grid; grid-template-columns: 1fr 1fr; gap: 6px 12px; font-size: 0.7rem; line-height: 1.2; color: var(--text-muted);">
+                                        <div>• <strong style="color: #eee">Lê Hoàng Tuấn Anh</strong> <span
+                                                style="font-size: 0.6rem; opacity: 0.6;">(26730003)</span></div>
+                                        <div>• <strong style="color: #eee">Hồ Thăng Long</strong> <span
+                                                style="font-size: 0.6rem; opacity: 0.6;">(26730045)</span></div>
+                                        <div>• <strong style="color: #eee">Nguyễn Văn Khánh</strong> <span
+                                                style="font-size: 0.6rem; opacity: 0.6;">(26730033)</span></div>
+                                        <div>• <strong style="color: #eee">Trịnh Đình Tiến</strong> <span
+                                                style="font-size: 0.6rem; opacity: 0.6;">(26730072)</span></div>
+                                        <div>• <strong style="color: #eee">Bùi Tuấn Huy</strong> <span
+                                                style="font-size: 0.6rem; opacity: 0.6;">(26730025)</span></div>
+                                        <div>• <strong style="color: #eee">Trương Đình Nguyên</strong> <span
+                                                style="font-size: 0.6rem; opacity: 0.6;">(26730052)</span></div>
+                                        <div>• <strong style="color: #eee">Dương Quang Minh</strong> <span
+                                                style="font-size: 0.6rem; opacity: 0.6;">(26730047)</span></div>
+                                        <div>• <strong style="color: #eee">Lê Duy Khương</strong> <span
+                                                style="font-size: 0.6rem; opacity: 0.6;">(26730036)</span></div>
+                                        <div>• <strong style="color: #eee">Trần Minh Hiếu</strong> <span
+                                                style="font-size: 0.6rem; opacity: 0.6;">(26730021)</span></div>
+                                        <div>• <strong style="color: #eee">Nguyễn Văn Thọ</strong> <span
+                                                style="font-size: 0.6rem; opacity: 0.6;">(26730065)</span></div>
+                                        <div style="grid-column: span 2;">• <strong style="color: #eee">Nguyễn Trọng
+                                                Khương</strong> <span
+                                                style="font-size: 0.6rem; opacity: 0.6;">(26730037)</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Chú thích chân bảng -->
+                            <div
+                                style="margin-top: 12px; padding-top: 8px; border-top: 1px solid rgba(255,255,255,0.05); font-size: 0.65rem; color: var(--text-muted); font-style: italic; text-align: center;">
+                                * Các thành viên đều có nhiệm vụ tham gia đóng góp tài liệu và tìm kiếm ý tưởng.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Column: Visual Frames -->
+                    <div class="slide-image-container brutalist animate-element del-2" style="max-height: 380px;">
+                        <img src="images/image06.png" alt="Chuyển đổi số" class="slide-image">
+                    </div>
+                </div>
+            </div>
+            <div class="slide-footer">
+                <span class="footer-logo">UIT - ĐHQG-HCM</span>
+                <span>SLIDE 01</span>
+            </div>
+        </div>
+
+        <!-- SLIDE 2: MỤC LỤC -->
+        <div class="slide" style="--neon-color: var(--neon-cyan)">
+            <div class="slide-content">
+                <div class="slide-header animate-element del-1">
+                    <div>
+                        <div class="slide-category">Tổng quan bài báo cáo</div>
+                        <h2 class="slide-title">MỤC LỤC NỘI DUNG</h2>
+                    </div>
+                </div>
+
+                <div class="slide-grid-3x4 animate-element del-2">
+                    <div class="glass-panel"
+                        style="padding: 15px; display: flex; flex-direction: column; justify-content: center; --item-color: var(--neon-cyan)">
+                        <div class="grid-item-index">01</div>
+                        <div class="grid-item-text">Giới thiệu chung ngành CNTT</div>
+                    </div>
+                    <div class="glass-panel"
+                        style="padding: 15px; display: flex; flex-direction: column; justify-content: center; --item-color: var(--neon-blue)">
+                        <div class="grid-item-index">02</div>
+                        <div class="grid-item-text">Vai trò CNTT trong học tập</div>
+                    </div>
+                    <div class="glass-panel"
+                        style="padding: 15px; display: flex; flex-direction: column; justify-content: center; --item-color: var(--neon-cyan)">
+                        <div class="grid-item-index">03</div>
+                        <div class="grid-item-text">Ứng dụng trong công việc</div>
+                    </div>
+                    <div class="glass-panel"
+                        style="padding: 15px; display: flex; flex-direction: column; justify-content: center; --item-color: var(--neon-pink)">
+                        <div class="grid-item-index">04</div>
+                        <div class="grid-item-text">Làn sóng AI & Ngành CNTT</div>
+                    </div>
+                    <div class="glass-panel"
+                        style="padding: 15px; display: flex; flex-direction: column; justify-content: center; --item-color: var(--neon-green)">
+                        <div class="grid-item-index">05</div>
+                        <div class="grid-item-text">Cơ hội việc làm rộng mở</div>
+                    </div>
+                    <div class="glass-panel"
+                        style="padding: 15px; display: flex; flex-direction: column; justify-content: center; --item-color: var(--neon-yellow)">
+                        <div class="grid-item-index">06</div>
+                        <div class="grid-item-text">Thực trạng đào tạo đại học</div>
+                    </div>
+                    <div class="glass-panel"
+                        style="padding: 15px; display: flex; flex-direction: column; justify-content: center; --item-color: var(--neon-green)">
+                        <div class="grid-item-index">07</div>
+                        <div class="grid-item-text">Thời đại chuyển đổi số</div>
+                    </div>
+                    <div class="glass-panel"
+                        style="padding: 15px; display: flex; flex-direction: column; justify-content: center; --item-color: var(--neon-pink)">
+                        <div class="grid-item-index">08</div>
+                        <div class="grid-item-text">AI: Thách thức hay Cơ hội?</div>
+                    </div>
+                    <div class="glass-panel"
+                        style="padding: 15px; display: flex; flex-direction: column; justify-content: center; --item-color: var(--neon-pink)">
+                        <div class="grid-item-index">09</div>
+                        <div class="grid-item-text">Khó khăn thường gặp</div>
+                    </div>
+                    <div class="glass-panel"
+                        style="padding: 15px; display: flex; flex-direction: column; justify-content: center; --item-color: var(--neon-cyan)">
+                        <div class="grid-item-index">10</div>
+                        <div class="grid-item-text">Hướng đi phù hợp cho SV</div>
+                    </div>
+                    <div class="glass-panel"
+                        style="padding: 15px; display: flex; flex-direction: column; justify-content: center; --item-color: var(--neon-blue)">
+                        <div class="grid-item-index">11</div>
+                        <div class="grid-item-text">Định hướng sau tốt nghiệp</div>
+                    </div>
+                    <div class="glass-panel"
+                        style="padding: 15px; display: flex; flex-direction: column; justify-content: center; --item-color: var(--neon-green)">
+                        <div class="grid-item-index">12</div>
+                        <div class="grid-item-text">Tóm tắt & Kết luận</div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide-footer">
+                <span class="footer-logo">UIT - ĐHQG-HCM</span>
+                <span>SLIDE 02</span>
+            </div>
+        </div>
+
+        <!-- SLIDE 3: GIỚI THIỆU NGÀNH CÔNG NGHỆ THÔNG TIN -->
+        <div class="slide" style="--neon-color: var(--neon-cyan)">
+            <div class="slide-content">
+                <div class="slide-split">
+                    <div class="glass-panel animate-element del-1">
+                        <div class="slide-category">01. GIỚI THIỆU CHUNG</div>
+                        <h2 class="slide-title" style="margin-bottom: 20px;">NGÀNH CÔNG NGHỆ<br>THÔNG TIN</h2>
+
+                        <div class="brutalist-card animate-element del-2"
+                            style="--border-color: var(--neon-cyan); margin-bottom: 20px; text-align: left;">
+                            <p
+                                style="font-weight: 700; color: var(--neon-cyan); margin-bottom: 8px; text-transform: uppercase; font-size: 0.85rem; letter-spacing: 1px;">
+                                Định nghĩa học thuật:</p>
+                            <p style="font-size: 0.95rem; line-height: 1.5;"><strong>Công nghệ Thông tin (IT)</strong>
+                                là ngành nghiên cứu, phát triển, quản lý hệ thống phần cứng, phần mềm, mạng máy tính và
+                                cơ sở dữ liệu nhằm xử lý, lưu trữ, truyền tải thông tin hiệu quả.</p>
+                        </div>
+
+                        <div class="animate-element del-3" style="text-align: left;">
+                            <p
+                                style="font-weight: 700; color: #ffffff; font-size: 0.9rem; text-transform: uppercase; margin-bottom: 8px;">
+                                Các lĩnh vực cốt lõi:</p>
+                            <div
+                                style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px; font-size: 0.85rem; color: var(--text-muted);">
+                                <div>• Phát triển phần mềm</div>
+                                <div>• Trí tuệ nhân tạo (AI)</div>
+                                <div>• An ninh mạng & Mạng</div>
+                                <div>• Khoa học dữ liệu</div>
+                                <div>• Thiết kế UX/UI</div>
+                                <div>• Điện toán đám mây</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slide-image-container brutalist animate-element del-2">
+                        <img src="images/image01.png" alt="Sinh viên IT" class="slide-image">
+                    </div>
+                </div>
+            </div>
+            <div class="slide-footer">
+                <span class="footer-logo">UIT - ĐHQG-HCM</span>
+                <span>SLIDE 03</span>
+            </div>
+        </div>
+
+        <!-- SLIDE 4: VAI TRÒ CỦA NGÀNH CNTT TRONG HỌC TẬP (Phần 1) -->
+        <div class="slide" style="--neon-color: var(--neon-blue)">
+            <div class="slide-content">
+                <div class="slide-split">
+                    <div class="glass-panel animate-element del-1" style="text-align: left;">
+                        <div class="slide-category">02. VAI TRÒ TRONG HỌC TẬP</div>
+                        <h2 class="slide-title" style="margin-bottom: 25px;">CÔNG CỤ HỖ TRỢ<br>HIỆU QUẢ CỰC ĐẠI</h2>
+
+                        <div style="margin-bottom: 25px;">
+                            <p
+                                style="font-weight: 700; color: var(--neon-blue); text-transform: uppercase; font-size: 0.85rem; letter-spacing: 1px; margin-bottom: 10px;">
+                                Truy cập & Tự học:</p>
+                            <ul class="slide-list list-unstyled">
+                                <li class="animate-element del-2">Kết nối <strong>kho tàng kiến thức toàn cầu</strong>
+                                    qua Internet chỉ với vài click.</li>
+                                <li class="animate-element del-3">Học tập không biên giới trên <strong>Coursera, edX,
+                                        Udemy, YouTube</strong>.</li>
+                                <li class="animate-element del-4">Sử dụng <strong>Generative AI (ChatGPT, Claude,
+                                        Gemini)</strong> hỗ trợ dịch thuật, giải thích mã nguồn và thuật toán 24/7.</li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <p
+                                style="font-weight: 700; color: var(--neon-blue); text-transform: uppercase; font-size: 0.85rem; letter-spacing: 1px; margin-bottom: 10px;">
+                                Quản trị & Cộng tác học tập:</p>
+                            <ul class="slide-list list-unstyled">
+                                <li class="animate-element del-5">Lưu trữ mây dữ liệu an toàn trên <strong>Google Drive,
+                                        OneDrive</strong>.</li>
+                                <li class="animate-element del-6">Cộng tác nhóm trực quan qua <strong>Notion, Trello,
+                                        Google Workspace</strong>.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="slide-image-container brutalist animate-element del-2"
+                        style="--neon-color: var(--neon-blue)">
+                        <img src="images/image07.png" alt="Học tập hiệu quả" class="slide-image">
+                    </div>
+                </div>
+            </div>
+            <div class="slide-footer">
+                <span class="footer-logo">UIT - ĐHQG-HCM</span>
+                <span>SLIDE 04</span>
+            </div>
+        </div>
+
+        <!-- SLIDE 5: VAI TRÒ CỦA NGÀNH CNTT TRONG HỌC TẬP (Phần 2) -->
+        <div class="slide" style="--neon-color: var(--neon-cyan)">
+            <div class="slide-content">
+                <div class="slide-split">
+                    <div class="glass-panel animate-element del-1" style="text-align: left;">
+                        <div class="slide-category">02. VAI TRÒ TRONG HỌC TẬP</div>
+                        <h2 class="slide-title" style="margin-bottom: 25px;">PHÁT TRIỂN TƯ DUY<br>& PHƯƠNG PHÁP HỌC</h2>
+
+                        <div style="margin-bottom: 15px;">
+                            <ul class="slide-list list-unstyled">
+                                <li class="animate-element del-2"><strong>Tư duy logic cao độ</strong> thông qua xây
+                                    dựng cấu trúc dữ liệu và giải thuật.</li>
+                                <li class="animate-element del-3"><strong>Tư duy hệ thống</strong> khi phân tích kiến
+                                    trúc phần mềm phức tạp.</li>
+                                <li class="animate-element del-4"><strong>Kỹ năng giải quyết vấn đề
+                                        (problem-solving)</strong> qua quy trình debug và tối ưu hóa code liên tục.</li>
+                            </ul>
+                        </div>
+
+                        <div class="quote-box animate-element del-5" style="--neon-color: var(--neon-cyan);">
+                            <p class="quote-text">"Code is like humor. When you have to explain it, it’s bad."</p>
+                            <p class="quote-author">– Cory House</p>
+                        </div>
+                    </div>
+
+                    <div class="slide-image-container brutalist animate-element del-2">
+                        <img src="images/image03.png" alt="Đam mê và kiên trì" class="slide-image">
+                    </div>
+                </div>
+            </div>
+            <div class="slide-footer">
+                <span class="footer-logo">UIT - ĐHQG-HCM</span>
+                <span>SLIDE 05</span>
+            </div>
+        </div>
+
+        <!-- SLIDE 6: ỨNG DỤNG CNTT TRONG CÔNG VIỆC HIỆN TẠI -->
+        <div class="slide" style="--neon-color: var(--neon-green)">
+            <div class="slide-content">
+                <div class="slide-split">
+                    <div class="glass-panel animate-element del-1" style="text-align: left;">
+                        <div class="slide-category">03. ỨNG DỤNG TRONG CÔNG VIỆC</div>
+                        <h2 class="slide-title" style="margin-bottom: 25px;">CNTT TRONG MỌI<br>NGÀNH NGHỀ HIỆN ĐẠI</h2>
+
+                        <div class="feature-grid-2" style="margin-bottom: 20px;">
+                            <div class="glass-panel" style="padding: 12px; background: rgba(0,255,135,0.02);">
+                                <p
+                                    style="font-weight: 700; color: var(--neon-green); font-size: 0.85rem; margin-bottom: 4px;">
+                                    🩺 Y TẾ THÔNG MINH</p>
+                                <p style="font-size: 0.75rem; color: var(--text-muted);">Bệnh án điện tử, chẩn đoán bệnh
+                                    hỗ trợ bởi AI, y tế từ xa (Telemedicine).</p>
+                            </div>
+                            <div class="glass-panel" style="padding: 12px; background: rgba(0,255,135,0.02);">
+                                <p
+                                    style="font-weight: 700; color: var(--neon-green); font-size: 0.85rem; margin-bottom: 4px;">
+                                    🎓 GIÁO DỤC 4.0</p>
+                                <p style="font-size: 0.75rem; color: var(--text-muted);">Hệ thống LMS, đào tạo trực
+                                    tuyến toàn cầu, lớp học ảo tương tác VR/AR.</p>
+                            </div>
+                            <div class="glass-panel" style="padding: 12px; background: rgba(0,255,135,0.02);">
+                                <p
+                                    style="font-weight: 700; color: var(--neon-green); font-size: 0.85rem; margin-bottom: 4px;">
+                                    💰 TÀI CHÍNH - FINTECH</p>
+                                <p style="font-size: 0.75rem; color: var(--text-muted);">Blockchain, giao dịch thuật
+                                    toán tự động, ví điện tử thông minh bảo mật.</p>
+                            </div>
+                            <div class="glass-panel" style="padding: 12px; background: rgba(0,255,135,0.02);">
+                                <p
+                                    style="font-weight: 700; color: var(--neon-green); font-size: 0.85rem; margin-bottom: 4px;">
+                                    🏭 SẢN XUẤT TỰ ĐỘNG</p>
+                                <p style="font-size: 0.75rem; color: var(--text-muted);">IoT công nghiệp, robot tự động
+                                    hóa, quản lý chuỗi cung ứng thông minh.</p>
+                            </div>
+                        </div>
+
+                        <div class="brutalist-card animate-element del-2"
+                            style="--border-color: var(--neon-green); padding: 15px;">
+                            <p style="font-weight: 700; font-size: 0.9rem; text-align: center;"><span
+                                    style="color: var(--neon-green);">THỰC TẾ:</span> Không còn ngành nghề nào hoạt động
+                                hiệu quả mà không phụ thuộc vào CNTT.</p>
+                        </div>
+                    </div>
+
+                    <div class="slide-image-container brutalist animate-element del-2"
+                        style="--neon-color: var(--neon-green)">
+                        <img src="images/image02.png" alt="Phân tích dữ liệu" class="slide-image">
+                    </div>
+                </div>
+            </div>
+            <div class="slide-footer">
+                <span class="footer-logo">UIT - ĐHQG-HCM</span>
+                <span>SLIDE 06</span>
+            </div>
+        </div>
+
+        <!-- SLIDE 7: CNTT TRONG CÔNG VIỆC CỦA SINH VIÊN NGÀNH IT -->
+        <div class="slide" style="--neon-color: var(--neon-blue)">
+            <div class="slide-content">
+                <div class="slide-split">
+                    <div class="glass-panel animate-element del-1" style="text-align: left;">
+                        <div class="slide-category">03. ỨNG DỤNG TRONG CÔNG VIỆC</div>
+                        <h2 class="slide-title" style="margin-bottom: 25px;">ĐẶC THÙ CÔNG VIỆC<br>KỸ SƯ PHẦN MỀM</h2>
+
+                        <div style="margin-bottom: 20px;">
+                            <p
+                                style="font-weight: 700; color: var(--neon-blue); text-transform: uppercase; font-size: 0.85rem; letter-spacing: 1px; margin-bottom: 10px;">
+                                Hành động hằng ngày:</p>
+                            <ul class="slide-list list-unstyled">
+                                <li class="animate-element del-2">Thiết kế giải pháp, viết code sạch, kiểm thử, debug,
+                                    tối ưu hệ thống.</li>
+                                <li class="animate-element del-3">Cộng tác nhóm công nghệ thông qua hệ thống quản lý mã
+                                    nguồn <strong>Git, GitHub, GitLab</strong>.</li>
+                                <li class="animate-element del-4">Giao tiếp với khách hàng hoặc các nhóm nghiệp vụ
+                                    (Business) để làm rõ yêu cầu phần mềm.</li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <p
+                                style="font-weight: 700; color: var(--neon-blue); text-transform: uppercase; font-size: 0.85rem; letter-spacing: 1px; margin-bottom: 10px;">
+                                Giá trị cốt lõi mang lại:</p>
+                            <ul class="slide-list list-unstyled">
+                                <li class="animate-element del-5">Xây dựng giải pháp kỹ thuật số giải quyết các bài toán
+                                    lớn của xã hội.</li>
+                                <li class="animate-element del-6">Đảm bảo an toàn thông tin, bảo mật dữ liệu cho người
+                                    dùng.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="slide-image-container brutalist animate-element del-2"
+                        style="--neon-color: var(--neon-blue)">
+                        <img src="images/image03.png" alt="Lập trình viên đam mê" class="slide-image">
+                    </div>
+                </div>
+            </div>
+            <div class="slide-footer">
+                <span class="footer-logo">UIT - ĐHQG-HCM</span>
+                <span>SLIDE 07</span>
+            </div>
+        </div>
+
+        <!-- SLIDE 8: LÀN SÓNG AI VÀ NGÀNH CNTT – BỐI CẢNH HIỆN TẠI -->
+        <div class="slide" style="--neon-color: var(--neon-pink)">
+            <div class="slide-content">
+                <div class="slide-split">
+                    <div class="glass-panel animate-element del-1" style="text-align: left;">
+                        <div class="slide-category">04. LÀN SÓNG AI & CNTT</div>
+                        <h2 class="slide-title" style="margin-bottom: 25px;">BỐI CẢNH BÙNG NỔ<br>TRÍ TUỆ NHÂN TẠO</h2>
+
+                        <div style="margin-bottom: 20px;">
+                            <ul class="slide-list list-unstyled">
+                                <li class="animate-element del-2"><strong>Generative AI (2022-Nay):</strong> ChatGPT,
+                                    Claude, Gemini tái cấu trúc cách con người làm việc và code.</li>
+                                <li class="animate-element del-3"><strong>Đầu tư công nghệ dịch chuyển:</strong> Các ông
+                                    lớn Big Tech (Microsoft, Google, Meta) rót hàng tỷ USD vào AI lõi.</li>
+                                <li class="animate-element del-4"><strong>Thách thức mới cho nhân lực:</strong> Sự
+                                    chuyển dịch mạnh sang Big Data, Generative AI yêu cầu kỹ sư nắm bắt kỹ năng
+                                    <strong>Prompt Engineering, MLOps, Data Pipeline</strong>.</li>
+                            </ul>
+                        </div>
+
+                        <div class="brutalist-card animate-element del-5"
+                            style="--border-color: var(--neon-pink); padding: 15px; background: rgba(255,0,127,0.02);">
+                            <p
+                                style="font-size: 0.85rem; font-weight: 700; text-align: center; text-transform: uppercase; color: var(--neon-pink);">
+                                Đòi hỏi kỹ sư CNTT phải học hỏi và tự đổi mới liên tục.</p>
+                        </div>
+                    </div>
+
+                    <div class="slide-image-container brutalist animate-element del-2"
+                        style="--neon-color: var(--neon-pink)">
+                        <img src="images/Screenshot 2026-05-18 at 14.15.01 - Tiến Đình.png" alt="Bối cảnh AI"
+                            class="slide-image">
+                    </div>
+                </div>
+            </div>
+            <div class="slide-footer">
+                <span class="footer-logo">UIT - ĐHQG-HCM</span>
+                <span>SLIDE 08</span>
+            </div>
+        </div>
+
+        <!-- SLIDE 9: CƠ HỘI VIỆC LÀM CÓ RỘNG MỞ KHÔNG? – CÂU TRẢ LỜI: CÓ! -->
+        <div class="slide" style="--neon-color: var(--neon-green)">
+            <div class="slide-content">
+                <div class="slide-split">
+                    <div class="glass-panel animate-element del-1" style="text-align: left;">
+                        <div class="slide-category">05. CƠ HỘI VIỆC LÀM</div>
+                        <h2 class="slide-title" style="margin-bottom: 25px;">CƠ HỘI VIỆC LÀM<br>LUÔN RỘNG MỞ!</h2>
+
+                        <div style="display: flex; flex-direction: column; gap: 15px;">
+                            <div class="glass-panel" style="padding: 15px; background: rgba(0,255,135,0.01);">
+                                <p
+                                    style="font-weight: 700; color: var(--neon-green); font-size: 0.95rem; margin-bottom: 5px;">
+                                    1. Nhu cầu nhân lực CNTT toàn cầu cực kỳ lớn</p>
+                                <p style="font-size: 0.8rem; color: var(--text-muted);">Gartner dự báo thiếu hụt 85
+                                    triệu nhân sự IT chất lượng cao vào 2030.</p>
+                            </div>
+                            <div class="glass-panel" style="padding: 15px; background: rgba(0,255,135,0.01);">
+                                <p
+                                    style="font-weight: 700; color: var(--neon-green); font-size: 0.95rem; margin-bottom: 5px;">
+                                    2. Không giới hạn biên giới (Remote & Global)</p>
+                                <p style="font-size: 0.8rem; color: var(--text-muted);">Khả năng làm việc từ xa,
+                                    Freelancer cho doanh nghiệp đa quốc gia với mức lương toàn cầu.</p>
+                            </div>
+                            <div class="glass-panel" style="padding: 15px; background: rgba(0,255,135,0.01);">
+                                <p
+                                    style="font-weight: 700; color: var(--neon-green); font-size: 0.95rem; margin-bottom: 5px;">
+                                    3. Xuất hiện hàng loạt ngành học & định hướng mới</p>
+                                <p style="font-size: 0.8rem; color: var(--text-muted);">Sự lên ngôi của AI Engineer,
+                                    Data Scientist, Cybersecurity Specialist, Cloud Architect...</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slide-image-container brutalist animate-element del-2"
+                        style="--neon-color: var(--neon-green)">
+                        <img src="images/image04.png" alt="Tương lai nghề nghiệp" class="slide-image">
+                    </div>
+                </div>
+            </div>
+            <div class="slide-footer">
+                <span class="footer-logo">UIT - ĐHQG-HCM</span>
+                <span>SLIDE 09</span>
+            </div>
+        </div>
+
+        <!-- SLIDE 10: CƠ HỘI VIỆC LÀM – DỮ LIỆU THỰC TẾ -->
+        <div class="slide" style="--neon-color: var(--neon-cyan)">
+            <div class="slide-content">
+                <div class="slide-header animate-element del-1">
+                    <div>
+                        <div class="slide-category">05. CƠ HỘI VIỆC LÀM</div>
+                        <h2 class="slide-title">THÔNG SỐ THỊ TRƯỜNG LAO ĐỘNG IT</h2>
+                    </div>
+                </div>
+
+                <div class="feature-grid-4 animate-element del-2" style="margin-bottom: 25px;">
+                    <div class="glass-panel metric-card" style="--metric-color: var(--neon-cyan)">
+                        <div class="metric-value">8-15Tr</div>
+                        <div class="metric-label">Fresher</div>
+                    </div>
+                    <div class="glass-panel metric-card" style="--metric-color: var(--neon-blue)">
+                        <div class="metric-value">15-30Tr</div>
+                        <div class="metric-label">Junior (1-3 Năm)</div>
+                    </div>
+                    <div class="glass-panel metric-card" style="--metric-color: var(--neon-purple)">
+                        <div class="metric-value">30-60Tr</div>
+                        <div class="metric-label">Senior (3-5 Năm)</div>
+                    </div>
+                    <div class="glass-panel metric-card" style="--metric-color: var(--neon-green)">
+                        <div class="metric-value">60-150Tr</div>
+                        <div class="metric-label">Tech Lead / Manager</div>
+                    </div>
+                </div>
+
+                <div class="slide-split" style="grid-template-columns: 1.2fr 0.8fr; gap: 20px;">
+                    <div class="glass-panel animate-element del-3" style="text-align: left; padding: 20px;">
+                        <p
+                            style="font-weight: 700; color: var(--neon-cyan); text-transform: uppercase; font-size: 0.85rem; margin-bottom: 10px;">
+                            Xu hướng tăng trưởng nổi bật (2024-2025):</p>
+                        <ul class="slide-list list-unstyled" style="font-size: 0.9rem;">
+                            <li><strong>AI Engineer:</strong> Nhu cầu tuyển dụng thực tế tăng vọt <strong>300%</strong>
+                                trong 2 năm qua.</li>
+                            <li><strong>DevOps & Cloud Computing:</strong> Luôn nằm trong Top 5 vị trí khó tuyển dụng
+                                nhất của các tập đoàn lớn.</li>
+                            <li><strong>Cybersecurity:</strong> Tình trạng thiếu hụt nhân lực khẩn cấp diễn ra trên phạm
+                                vi toàn cầu.</li>
+                        </ul>
+                    </div>
+
+                    <div class="slide-image-container brutalist animate-element del-4" style="max-height: 150px;">
+                        <img src="images/image10.png" alt="Con đường sự nghiệp" class="slide-image">
+                    </div>
+                </div>
+            </div>
+            <div class="slide-footer">
+                <span class="footer-logo">UIT - ĐHQG-HCM</span>
+                <span>SLIDE 10</span>
+            </div>
+        </div>
+
+        <!-- SLIDE 11: THỰC TRẠNG ĐÀO TẠO CNTT ĐẠI HỌC -->
+        <div class="slide" style="--neon-color: var(--neon-yellow)">
+            <div class="slide-content">
+                <div class="slide-split">
+                    <div class="glass-panel animate-element del-1" style="text-align: left;">
+                        <div class="slide-category">06. THỰC TRẠNG ĐÀO TẠO</div>
+                        <h2 class="slide-title" style="margin-bottom: 20px; color: var(--neon-yellow);">KHOẢNG CÁCH
+                            (GAP)<br>TRONG ĐÀO TẠO</h2>
+
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-bottom: 15px;">
+                            <div class="brutalist-card" style="--border-color: var(--neon-yellow); padding: 15px;">
+                                <p
+                                    style="font-weight: 700; font-size: 0.8rem; text-transform: uppercase; color: var(--neon-yellow); margin-bottom: 8px;">
+                                    Giáo trình truyền thống:</p>
+                                <p style="font-size: 0.75rem; color: var(--text-muted); line-height: 1.4;">Chu kỳ cập
+                                    nhật từ 3-5 năm. Nặng về toán lý thuyết lý thuyết cơ bản, thiếu sự tiếp cận trực
+                                    tiếp với các quy trình công nghiệp thực tế.</p>
+                            </div>
+                            <div class="brutalist-card" style="--border-color: var(--neon-cyan); padding: 15px;">
+                                <p
+                                    style="font-weight: 700; font-size: 0.8rem; text-transform: uppercase; color: var(--neon-cyan); margin-bottom: 8px;">
+                                    Thực tế công nghệ AI:</p>
+                                <p style="font-size: 0.75rem; color: var(--text-muted); line-height: 1.4;">Thay đổi liên
+                                    tục theo từng tuần. Đòi hỏi kỹ năng thực chiến ngay lập tức như MLOps, xử lý dữ liệu
+                                    lớn, Prompt Engineering...</p>
+                            </div>
+                        </div>
+
+                        <div class="glass-panel"
+                            style="padding: 15px; background: rgba(255, 230, 0, 0.02); border-color: rgba(255, 230, 0, 0.2);">
+                            <p style="font-size: 0.85rem; font-weight: 700; color: #ffffff;">HẬU QUẢ thực tế:</p>
+                            <p style="font-size: 0.8rem; color: var(--text-muted); line-height: 1.4; margin-top: 4px;">
+                                Sinh viên ra trường thiếu kỹ năng thực chiến lâm sàng, doanh nghiệp bắt buộc phải tái
+                                đào tạo từ đầu. Xảy ra nghịch lý thất nghiệp mặc dù thị trường thiếu nhân lực.</p>
+                        </div>
+                    </div>
+
+                    <div class="slide-image-container brutalist animate-element del-2"
+                        style="--neon-color: var(--neon-yellow)">
+                        <img src="images/Screenshot 2026-05-18 at 14.15.08 - Tiến Đình.png" alt="Thực trạng đào tạo"
+                            class="slide-image">
+                    </div>
+                </div>
+            </div>
+            <div class="slide-footer">
+                <span class="footer-logo">UIT - ĐHQG-HCM</span>
+                <span>SLIDE 11</span>
+            </div>
+        </div>
+
+        <!-- SLIDE 12: THUẬN LỢI LỚN NHẤT – THỜI ĐẠI CHUYỂN ĐỔI SỐ -->
+        <div class="slide" style="--neon-color: var(--neon-green)">
+            <div class="slide-content">
+                <div class="slide-split">
+                    <div class="glass-panel animate-element del-1" style="text-align: left;">
+                        <div class="slide-category">07. THỜI ĐẠI CHUYỂN ĐỔI SỐ</div>
+                        <h2 class="slide-title" style="margin-bottom: 25px;">ĐÒN BẨY KHỔNG LỒ<br>CHO NGƯỜI LÀM IT</h2>
+
+                        <div style="margin-bottom: 20px;">
+                            <p
+                                style="font-weight: 700; color: var(--neon-green); text-transform: uppercase; font-size: 0.85rem; letter-spacing: 1px; margin-bottom: 10px;">
+                                Các trụ cột thúc đẩy chuyển đổi số:</p>
+                            <div
+                                style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; font-size: 0.85rem; color: var(--text-muted); margin-bottom: 15px;">
+                                <div>• ☁️ Cloud (Mở rộng vô tận)</div>
+                                <div>• 🤖 AI (Thông minh hóa quy trình)</div>
+                                <div>• 🔌 IoT (Kết nối dữ liệu thời gian thực)</div>
+                                <div>• 📊 Big Data (Quyết định bằng số liệu)</div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <p
+                                style="font-weight: 700; color: var(--neon-green); text-transform: uppercase; font-size: 0.85rem; letter-spacing: 1px; margin-bottom: 10px;">
+                                Tác động lớn nhất:</p>
+                            <ul class="slide-list list-unstyled" style="font-size: 0.9rem;">
+                                <li class="animate-element del-2">Đem lại mức thu nhập cực kỳ xứng đáng và cơ hội thăng
+                                    tiến toàn cầu.</li>
+                                <li class="animate-element del-3">Tạo ra tác động xã hội to lớn: Code bạn viết ra có thể
+                                    trực tiếp làm thay đổi cuộc sống của hàng triệu con người.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="slide-image-container brutalist animate-element del-2"
+                        style="--neon-color: var(--neon-green)">
+                        <img src="images/image06.png" alt="Chuyển đổi số đòn bẩy" class="slide-image">
+                    </div>
+                </div>
+            </div>
+            <div class="slide-footer">
+                <span class="footer-logo">UIT - ĐHQG-HCM</span>
+                <span>SLIDE 12</span>
+            </div>
+        </div>
+
+        <!-- SLIDE 13: AI – THÁCH THỨC HAY CƠ HỘI? -->
+        <div class="slide" style="--neon-color: var(--neon-pink)">
+            <div class="slide-content">
+                <div class="slide-split">
+                    <div class="glass-panel animate-element del-1" style="text-align: left;">
+                        <div class="slide-category">08. AI: THÁCH THỨC HAY CƠ HỘI?</div>
+                        <h2 class="slide-title" style="margin-bottom: 20px;">AI: TRỢ LÝ ĐẮC LỰC<br>HAY ĐỐI THỦ ĐÁNG GỒM?
+                        </h2>
+
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-bottom: 15px;">
+                            <div style="border-left: 3px solid var(--neon-pink); padding-left: 12px;">
+                                <p
+                                    style="font-weight: 700; color: var(--neon-pink); font-size: 0.85rem; text-transform: uppercase;">
+                                    ⚠️ THÁCH THỨC:</p>
+                                <p
+                                    style="font-size: 0.75rem; color: var(--text-muted); line-height: 1.4; margin-top: 4px;">
+                                    Học sinh, sinh viên lạm dụng AI làm thui chột khả năng tự suy luận sâu. Các công
+                                    việc lập trình đơn giản (Coder sơ cấp) dần bị AI thay thế.</p>
+                            </div>
+                            <div style="border-left: 3px solid var(--neon-green); padding-left: 12px;">
+                                <p
+                                    style="font-weight: 700; color: var(--neon-green); font-size: 0.85rem; text-transform: uppercase;">
+                                    🚀 CƠ HỘI VÀNG:</p>
+                                <p
+                                    style="font-size: 0.75rem; color: var(--text-muted); line-height: 1.4; margin-top: 4px;">
+                                    Công cụ Copilot/AI giúp tăng tốc độ viết code, boilerplate và tạo test gấp 3 lần.
+                                    Giúp sinh viên vùng sâu tiếp cận bình đẳng với tri thức công nghệ hàng đầu thế giới.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="quote-box animate-element del-2"
+                            style="--neon-color: var(--neon-pink); margin: 15px 0 0 0; padding: 15px;">
+                            <p class="quote-text" style="font-size: 0.95rem; line-height: 1.4;">"AI không thay thế lập
+                                trình viên giỏi. AI thay thế lập trình viên KHÔNG biết dùng AI."</p>
+                        </div>
+                    </div>
+
+                    <div class="slide-image-container brutalist animate-element del-2"
+                        style="--neon-color: var(--neon-pink)">
+                        <img src="images/Screenshot 2026-05-18 at 14.15.18 - Tiến Đình.png"
+                            alt="AI Thách thức hay Cơ hội" class="slide-image">
+                    </div>
+                </div>
+            </div>
+            <div class="slide-footer">
+                <span class="footer-logo">UIT - ĐHQG-HCM</span>
+                <span>SLIDE 13</span>
+            </div>
+        </div>
+
+        <!-- SLIDE 14: AI – CƠ HỘI CHO SINH VIÊN CNTT (Phần 1) -->
+        <div class="slide" style="--neon-color: var(--neon-blue)">
+            <div class="slide-content">
+                <div class="slide-split">
+                    <div class="glass-panel animate-element del-1" style="text-align: left;">
+                        <div class="slide-category">08. CƠ HỘI CỦA AI</div>
+                        <h2 class="slide-title" style="margin-bottom: 25px;">AI GIÚP HỌC TẬP<br>& MỞ RA NGHỀ MỚI</h2>
+
+                        <div style="margin-bottom: 20px;">
+                            <p
+                                style="font-weight: 700; color: var(--neon-blue); text-transform: uppercase; font-size: 0.85rem; letter-spacing: 1px; margin-bottom: 10px;">
+                                Gia sư lập trình 24/7:</p>
+                            <ul class="slide-list list-unstyled">
+                                <li class="animate-element del-2">Giải thích chi tiết các thuật toán cấu trúc dữ liệu
+                                    phức tạp theo ngôn từ dễ hiểu nhất.</li>
+                                <li class="animate-element del-3">Tự động phát hiện lỗi biên dịch (Syntax Error), giải
+                                    thích và debug cực nhanh.</li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <p
+                                style="font-weight: 700; color: var(--neon-blue); text-transform: uppercase; font-size: 0.85rem; letter-spacing: 1px; margin-bottom: 10px;">
+                                Ngành nghề AI đầy triển vọng:</p>
+                            <div
+                                style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px; font-size: 0.85rem; color: var(--text-muted);">
+                                <div>• <strong>Prompt Engineer:</strong> Kỹ sư tối ưu hóa câu lệnh AI.</div>
+                                <div>• <strong>AI Integrator:</strong> Tích hợp các mô hình AI vào ứng dụng thực tế.
+                                </div>
+                                <div>• <strong>MLOps Engineer:</strong> Vận hành hệ thống học máy quy mô lớn.</div>
+                                <div>• <strong>AI Ethics Specialist:</strong> Nhà tư vấn đạo đức trí tuệ nhân tạo.</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slide-image-container brutalist animate-element del-2"
+                        style="--neon-color: var(--neon-blue)">
+                        <img src="images/image08.png" alt="AI Bạn đồng hành" class="slide-image">
+                    </div>
+                </div>
+            </div>
+            <div class="slide-footer">
+                <span class="footer-logo">UIT - ĐHQG-HCM</span>
+                <span>SLIDE 14</span>
+            </div>
+        </div>
+
+        <!-- SLIDE 15: AI – CƠ HỘI CHO SINH VIÊN CNTT (Phần 2) -->
+        <div class="slide" style="--neon-color: var(--neon-pink)">
+            <div class="slide-content">
+                <div class="slide-split">
+                    <div class="glass-panel animate-element del-1" style="text-align: left;">
+                        <div class="slide-category">08. CƠ HỘI CỦA AI</div>
+                        <h2 class="slide-title" style="margin-bottom: 25px;">CÔNG THỨC LÀM CHỦ<br>THỜI ĐẠI AI</h2>
+
+                        <div class="brutalist-card animate-element del-2"
+                            style="--border-color: var(--neon-pink); padding: 15px; margin-bottom: 20px; background: rgba(255,0,127,0.01);">
+                            <p style="font-weight: 800; font-size: 1.1rem; text-align: center; letter-spacing: 1px;">
+                                <span style="color: var(--neon-cyan);">TƯ DUY ĐÚNG</span> + <span
+                                    style="color: var(--neon-pink);">CÔNG CỤ ĐÚNG</span> = <span
+                                    style="color: var(--neon-green);">GIÁ TRỊ KHỔNG LỒ</span>
+                            </p>
+                        </div>
+
+                        <div style="margin-bottom: 15px;">
+                            <p
+                                style="font-weight: 700; color: #ffffff; font-size: 0.9rem; text-transform: uppercase; margin-bottom: 8px;">
+                                Kỹ năng mềm quyết định sự khác biệt:</p>
+                            <ul class="slide-list list-unstyled" style="font-size: 0.9rem;">
+                                <li class="animate-element del-3"><strong>Tư duy phản biện (Critical Thinking)</strong>
+                                    để đánh giá tính xác thực của thông tin AI cung cấp.</li>
+                                <li class="animate-element del-4"><strong>Khả năng đồng cảm & thấu hiểu</strong> khách
+                                    hàng mà các dòng mã AI không bao giờ thay thế được.</li>
+                                <li class="animate-element del-5">Tư duy hệ thống lớn, thích nghi nhanh với công nghệ
+                                    mới.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="slide-image-container brutalist animate-element del-2"
+                        style="--neon-color: var(--neon-pink)">
+                        <img src="images/image09.png" alt="Lập trình làm chủ AI" class="slide-image">
+                    </div>
+                </div>
+            </div>
+            <div class="slide-footer">
+                <span class="footer-logo">UIT - ĐHQG-HCM</span>
+                <span>SLIDE 15</span>
+            </div>
+        </div>
+
+        <!-- SLIDE 16: KHÓ KHĂN SINH VIÊN CNTT THƯỜNG GẶP (Phần 1) -->
+        <div class="slide" style="--neon-color: var(--neon-pink)">
+            <div class="slide-content">
+                <div class="slide-split">
+                    <div class="glass-panel animate-element del-1" style="text-align: left;">
+                        <div class="slide-category">09. KHÓ KHĂN THƯỜNG GẶP</div>
+                        <h2 class="slide-title" style="margin-bottom: 25px; color: var(--neon-pink);">THỬ THÁCH NGHỀ
+                            NGHIỆP<br>(PHẦN 1)</h2>
+
+                        <div style="display: flex; flex-direction: column; gap: 15px;">
+                            <div class="glass-panel animate-element del-2"
+                                style="padding: 12px; border-color: rgba(255,0,127,0.15); background: rgba(255,0,127,0.01);">
+                                <p
+                                    style="font-weight: 700; color: var(--neon-pink); font-size: 0.9rem; margin-bottom: 3px;">
+                                    1. Khối lượng tri thức khổng lồ & Quá tải thông tin</p>
+                                <p style="font-size: 0.8rem; color: var(--text-muted);">Công nghệ thay đổi chóng mặt
+                                    từng ngày, dễ dẫn đến cảm giác kiệt sức (burnout).</p>
+                            </div>
+                            <div class="glass-panel animate-element del-3"
+                                style="padding: 12px; border-color: rgba(255,0,127,0.15); background: rgba(255,0,127,0.01);">
+                                <p
+                                    style="font-weight: 700; color: var(--neon-pink); font-size: 0.9rem; margin-bottom: 3px;">
+                                    2. Chuyển đổi tư duy máy tính</p>
+                                <p style="font-size: 0.8rem; color: var(--text-muted);">Khó khăn ban đầu khi học cách
+                                    suy nghĩ logic như máy tính, hiểu thuật toán sâu xa.</p>
+                            </div>
+                            <div class="glass-panel animate-element del-4"
+                                style="padding: 12px; border-color: rgba(255,0,127,0.15); background: rgba(255,0,127,0.01);">
+                                <p
+                                    style="font-weight: 700; color: var(--neon-pink); font-size: 0.9rem; margin-bottom: 3px;">
+                                    3. Giáo trình nặng toán lý thuyết</p>
+                                <p style="font-size: 0.8rem; color: var(--text-muted);">Thiếu cơ hội cọ xát với các dự
+                                    án thực tế quy mô lớn của doanh nghiệp trong giai đoạn đầu.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slide-image-container brutalist animate-element del-2"
+                        style="--neon-color: var(--neon-pink)">
+                        <img src="images/image05.png" alt="Khó khăn 1" class="slide-image">
+                    </div>
+                </div>
+            </div>
+            <div class="slide-footer">
+                <span class="footer-logo">UIT - ĐHQG-HCM</span>
+                <span>SLIDE 16</span>
+            </div>
+        </div>
+
+        <!-- SLIDE 17: KHÓ KHĂN SINH VIÊN CNTT THƯỜNG GẶP (Phần 2) -->
+        <div class="slide" style="--neon-color: var(--neon-pink)">
+            <div class="slide-content">
+                <div class="slide-split">
+                    <div class="glass-panel animate-element del-1" style="text-align: left;">
+                        <div class="slide-category">09. KHÓ KHĂN THƯỜNG GẶP</div>
+                        <h2 class="slide-title" style="margin-bottom: 25px; color: var(--neon-pink);">ÁP LỰC
+                            DEADLINE<br>& TÂM LÝ KẺ GIẢ MẠO</h2>
+
+                        <div style="display: flex; flex-direction: column; gap: 15px;">
+                            <div class="glass-panel animate-element del-2"
+                                style="padding: 12px; border-color: rgba(255,0,127,0.15); background: rgba(255,0,127,0.01);">
+                                <p
+                                    style="font-weight: 700; color: var(--neon-pink); font-size: 0.9rem; margin-bottom: 3px;">
+                                    4. Áp lực thời gian & Đạt chuẩn chất lượng</p>
+                                <p style="font-size: 0.8rem; color: var(--text-muted);">Code chạy được và code tốt là
+                                    hai bài toán hoàn toàn khác nhau. Áp lực mất ngủ vì bug.</p>
+                            </div>
+                            <div class="glass-panel animate-element del-3"
+                                style="padding: 12px; border-color: rgba(255,0,127,0.15); background: rgba(255,0,127,0.01);">
+                                <p
+                                    style="font-weight: 700; color: var(--neon-pink); font-size: 0.9rem; margin-bottom: 3px;">
+                                    5. Hội chứng kẻ giả mạo (Imposter Syndrome)</p>
+                                <p style="font-size: 0.8rem; color: var(--text-muted);">Dễ rơi vào tâm lý tự ti so sánh
+                                    bản thân với "siêu nhân" công nghệ trên GitHub hay LinkedIn.</p>
+                            </div>
+                            <div class="glass-panel animate-element del-4"
+                                style="padding: 12px; border-color: rgba(255,0,127,0.15); background: rgba(255,0,127,0.01);">
+                                <p
+                                    style="font-weight: 700; color: var(--neon-pink); font-size: 0.9rem; margin-bottom: 3px;">
+                                    6. Chi phí thiết bị chuyên nghiệp</p>
+                                <p style="font-size: 0.8rem; color: var(--text-muted);">Đòi hỏi thiết bị có cấu hình đủ
+                                    mạnh để huấn luyện AI hoặc phát triển đa nền tảng.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slide-image-container brutalist animate-element del-2"
+                        style="--neon-color: var(--neon-pink)">
+                        <img src="images/image05.png" alt="Khó khăn 2" class="slide-image">
+                    </div>
+                </div>
+            </div>
+            <div class="slide-footer">
+                <span class="footer-logo">UIT - ĐHQG-HCM</span>
+                <span>SLIDE 17</span>
+            </div>
+        </div>
+
+        <!-- SLIDE 18: AI CÓ PHẢI KHÓ KHĂN KHÔNG? – GÓC NHÌN THỰC TẾ -->
+        <div class="slide" style="--neon-color: var(--neon-yellow)">
+            <div class="slide-content">
+                <div class="slide-split">
+                    <div class="glass-panel animate-element del-1" style="text-align: left;">
+                        <div class="slide-category">09. KHÓ KHĂN THỰC TẾ</div>
+                        <h2 class="slide-title" style="margin-bottom: 25px; color: var(--neon-yellow);">AI CÓ THỰC SỰ
+                            LÀ<br>MỘT KHÓ KHĂN?</h2>
+
+                        <div style="margin-bottom: 20px;">
+                            <p
+                                style="font-weight: 700; color: var(--neon-yellow); text-transform: uppercase; font-size: 0.85rem; letter-spacing: 1px; margin-bottom: 10px;">
+                                Những nguy cơ tiềm tàng:</p>
+                            <ul class="slide-list list-unstyled">
+                                <li class="animate-element del-2">Sinh viên lười suy nghĩ độc lập vì thói quen phó mặc
+                                    toàn bộ cho AI tạo code hộ.</li>
+                                <li class="animate-element del-3">Mất đi năng lực xử lý tận gốc vấn đề khi thiếu vắng
+                                    kết nối Internet/AI.</li>
+                                <li class="animate-element del-4">Gặp lỗi "ảo giác hệ thống" (Hallucination) do không có
+                                    khả năng kiểm định độ tin cậy của AI.</li>
+                            </ul>
+                        </div>
+
+                        <div class="brutalist-card animate-element del-5"
+                            style="--border-color: var(--neon-yellow); padding: 15px; text-align: center;">
+                            <p style="font-weight: 700; font-size: 0.95rem; text-transform: uppercase;"><span
+                                    style="color: var(--neon-yellow);">QUY TẮC VÀNG:</span> Dùng AI để tăng tốc độ thực
+                                thi, không dùng AI thay thế cho não bộ.</p>
+                        </div>
+                    </div>
+
+                    <div class="slide-image-container brutalist animate-element del-2"
+                        style="--neon-color: var(--neon-yellow)">
+                        <img src="images/image08.png" alt="AI khó khăn góc nhìn" class="slide-image">
+                    </div>
+                </div>
+            </div>
+            <div class="slide-footer">
+                <span class="footer-logo">UIT - ĐHQG-HCM</span>
+                <span>SLIDE 18</span>
+            </div>
+        </div>
+
+        <!-- SLIDE 19: HƯỚNG ĐI PHÙ HỢP CHO SINH VIÊN -->
+        <div class="slide" style="--neon-color: var(--neon-green)">
+            <div class="slide-content">
+                <div class="slide-split">
+                    <div class="glass-panel animate-element del-1" style="text-align: left;">
+                        <div class="slide-category">10. HƯỚNG ĐI PHÙ HỢP</div>
+                        <h2 class="slide-title" style="margin-bottom: 20px;">XÂY DỰNG MÔ HÌNH<br>NĂNG LỰC CHỮ T
+                            (T-SHAPED)</h2>
+
+                        <div
+                            style="display: flex; flex-direction: column; gap: 12px; font-size: 0.85rem; margin-bottom: 15px;">
+                            <div class="glass-panel" style="padding: 10px; background: rgba(0,255,135,0.01);">
+                                <p style="font-weight: 700; color: var(--neon-green);">🧱 NỀN TẢNG RỘNG (Broad Base):
+                                </p>
+                                <p style="color: var(--text-muted); font-size: 0.75rem;">Toán học rời rạc, Cấu trúc dữ
+                                    liệu & Giải thuật, Kiến trúc hệ điều hành, Hệ cơ sở dữ liệu.</p>
+                            </div>
+                            <div class="glass-panel" style="padding: 10px; background: rgba(0,255,135,0.01);">
+                                <p style="font-weight: 700; color: var(--neon-cyan);">⚡ CHUYÊN SÂU HẸP (Deep Expertise):
+                                </p>
+                                <p style="color: var(--text-muted); font-size: 0.75rem;">Lựa chọn một mũi nhọn để đi
+                                    sâu: Phát triển Web/Mobile, AI Engineer, MLOps, Cybersecurity.</p>
+                            </div>
+                            <div class="glass-panel" style="padding: 10px; background: rgba(0,255,135,0.01);">
+                                <p style="font-weight: 700; color: var(--neon-yellow);">🗣️ KỸ NĂNG BỔ TRỢ:</p>
+                                <p style="color: var(--text-muted); font-size: 0.75rem;">Ngoại ngữ (Tiếng Anh là bắt
+                                    buộc), Kỹ năng teamwork, Kỹ năng tự học thông tin học thuật.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slide-image-container brutalist animate-element del-2"
+                        style="--neon-color: var(--neon-green)">
+                        <img src="images/Screenshot 2026-05-18 at 14.15.28 - Tiến Đình.png" alt="Hướng đi phù hợp"
+                            class="slide-image">
+                    </div>
+                </div>
+            </div>
+            <div class="slide-footer">
+                <span class="footer-logo">UIT - ĐHQG-HCM</span>
+                <span>SLIDE 19</span>
+            </div>
+        </div>
+
+        <!-- SLIDE 20: HƯỚNG ĐI CHI TIẾT THEO TỪNG NĂM HỌC -->
+        <div class="slide" style="--neon-color: var(--neon-cyan)">
+            <div class="slide-content">
+                <div class="slide-header animate-element del-1">
+                    <div>
+                        <div class="slide-category">10. HƯỚNG ĐI PHÙ HỢP</div>
+                        <h2 class="slide-title">LỘ TRÌNH 4 NĂM ĐẠI HỌC THỰC CHIẾN</h2>
+                    </div>
+                </div>
+
+                <div class="slide-split" style="grid-template-columns: 1.25fr 0.75fr; gap: 20px;">
+                    <div style="display: flex; flex-direction: column; gap: 15px;">
+                        <div class="brutalist-card animate-element del-2"
+                            style="--border-color: var(--neon-cyan); padding: 12px; text-align: left;">
+                            <p
+                                style="font-weight: 700; font-size: 0.9rem; color: var(--neon-cyan); margin-bottom: 4px;">
+                                NĂM 1–2: XÂY DỰNG KHUNG MÓNG VỮNG CHẮC</p>
+                            <p style="font-size: 0.75rem; color: var(--text-muted); line-height: 1.4;">Học chắc các môn
+                                cơ sở ngành, rèn luyện tư duy lập trình căn bản. Thực hành viết code tối thiểu 2-3 giờ
+                                mỗi ngày. Tích cực tham gia các câu lạc bộ lập trình, cuộc thi Hackathon.</p>
+                        </div>
+
+                        <div class="brutalist-card animate-element del-3"
+                            style="--border-color: var(--neon-blue); padding: 12px; text-align: left;">
+                            <p
+                                style="font-weight: 700; font-size: 0.9rem; color: var(--neon-blue); margin-bottom: 4px;">
+                                NĂM 3: CHỌN MŨI NHỌN CHUYÊN SÂU & THỰC TẬP</p>
+                            <p style="font-size: 0.75rem; color: var(--text-muted); line-height: 1.4;">Xác định hướng đi
+                                chuyên sâu (Web, AI, Cloud...). Bắt tay thực hiện các dự án cá nhân thực tế (Personal
+                                Projects), đóng góp mã nguồn mở, tìm cơ hội thực tập sớm (Internship).</p>
+                        </div>
+
+                        <div class="brutalist-card animate-element del-4"
+                            style="--border-color: var(--neon-green); padding: 12px; text-align: left;">
+                            <p
+                                style="font-weight: 700; font-size: 0.9rem; color: var(--neon-green); margin-bottom: 4px;">
+                                NĂM 4: CHUẨN BỊ BƯỚC VÀO THỊ TRƯỜNG LAO ĐỘNG</p>
+                            <p style="font-size: 0.75rem; color: var(--text-muted); line-height: 1.4;">Hoàn thiện hồ sơ
+                                năng lực cá nhân (GitHub Portfolio), chủ động tìm hiểu thị trường tuyển dụng. Luyện tập
+                                giải thuật, thiết kế kiến trúc hệ thống để sẵn sàng phỏng vấn.</p>
+                        </div>
+                    </div>
+
+                    <div class="slide-image-container brutalist animate-element del-5" style="max-height: 300px;">
+                        <img src="images/image10.png" alt="Lộ trình 4 năm" class="slide-image">
+                    </div>
+                </div>
+            </div>
+            <div class="slide-footer">
+                <span class="footer-logo">UIT - ĐHQG-HCM</span>
+                <span>SLIDE 20</span>
+            </div>
+        </div>
+
+        <!-- SLIDE 21: ĐỊNH HƯỚNG SAU KHI TỐT NGHIỆP – CÁC LỰA CHỌN -->
+        <div class="slide" style="--neon-color: var(--neon-green)">
+            <div class="slide-content">
+                <div class="slide-split">
+                    <div class="glass-panel animate-element del-1" style="text-align: left;">
+                        <div class="slide-category">11. ĐỊNH HƯỚNG SAU TỐT NGHIỆP</div>
+                        <h2 class="slide-title" style="margin-bottom: 25px;">4 LỰA CHỌN PHÁT TRIỂN<br>SỰ NGHIỆP LỚN</h2>
+
+                        <div class="feature-grid-2" style="font-size: 0.85rem; margin-bottom: 10px;">
+                            <div class="glass-panel" style="padding: 15px; background: rgba(0,255,135,0.01);">
+                                <p style="font-weight: 700; color: var(--neon-cyan); margin-bottom: 4px;">1. ĐI LÀM NGAY
+                                    (Fresher/Junior)</p>
+                                <p style="font-size: 0.75rem; color: var(--text-muted);">Gia nhập công ty công nghệ để
+                                    có thu nhập, cọ xát thực tế sớm. Đích đến trở thành Senior sau 3-5 năm.</p>
+                            </div>
+                            <div class="glass-panel" style="padding: 15px; background: rgba(0,255,135,0.01);">
+                                <p style="font-weight: 700; color: var(--neon-pink); margin-bottom: 4px;">2. HỌC LÊN CAO
+                                    (Master/PhD)</p>
+                                <p style="font-size: 0.75rem; color: var(--text-muted);">Đi sâu vào nghiên cứu khoa học
+                                    cốt lõi. Cực kỳ phù hợp với các nhánh AI, Data Science, Cryptography.</p>
+                            </div>
+                            <div class="glass-panel" style="padding: 15px; background: rgba(0,255,135,0.01);">
+                                <p style="font-weight: 700; color: var(--neon-yellow); margin-bottom: 4px;">3. KHỞI
+                                    NGHIỆP (Startup)</p>
+                                <p style="font-size: 0.75rem; color: var(--text-muted);">Tự do kiến tạo sản phẩm riêng,
+                                    tiềm năng kinh tế khổng lồ. Tuy nhiên đòi hỏi kỹ năng vận hành và rủi ro lớn.</p>
+                            </div>
+                            <div class="glass-panel" style="padding: 15px; background: rgba(0,255,135,0.01);">
+                                <p style="font-weight: 700; color: var(--neon-green); margin-bottom: 4px;">4. FREELANCE
+                                    / REMOTE GLOBAL</p>
+                                <p style="font-size: 0.75rem; color: var(--text-muted);">Tự do về thời gian, làm việc
+                                    xuyên biên giới. Đòi hỏi tinh thần kỷ luật tự giác thép và khả năng quản lý tài
+                                    chính.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slide-image-container brutalist animate-element del-2"
+                        style="--neon-color: var(--neon-green)">
+                        <img src="images/image04.png" alt="Các hướng đi" class="slide-image">
+                    </div>
+                </div>
+            </div>
+            <div class="slide-footer">
+                <span class="footer-logo">UIT - ĐHQG-HCM</span>
+                <span>SLIDE 21</span>
+            </div>
+        </div>
+
+        <!-- SLIDE 22: ĐỊNH HƯỚNG – LỘ TRÌNH SỰ NGHIỆP IT -->
+        <div class="slide" style="--neon-color: var(--neon-cyan)">
+            <div class="slide-content">
+                <div class="slide-header animate-element del-1">
+                    <div>
+                        <div class="slide-category">11. ĐỊNH HƯỚNG SỰ NGHIỆP</div>
+                        <h2 class="slide-title">LỘ TRÌNH TIẾN THÂN CỦA KỸ SƯ PHẦN MỀM</h2>
+                    </div>
+                </div>
+
+                <div class="feature-grid-4 animate-element del-2" style="margin-bottom: 25px;">
+                    <div class="glass-panel"
+                        style="text-align: left; padding: 20px; border-top: 3px solid var(--neon-cyan);">
+                        <p
+                            style="font-family: var(--font-heading); font-size: 1.1rem; color: var(--neon-cyan); margin-bottom: 6px;">
+                            CẤP 1: INTERN</p>
+                        <p style="font-size: 0.75rem; color: var(--text-muted); line-height: 1.4;">Thời gian 6-12 tháng.
+                            Tập trung học hỏi quy trình công nghiệp thực tế, làm quen văn hóa tổ chức và xây dựng các
+                            mối quan hệ ban đầu.</p>
+                    </div>
+                    <div class="glass-panel"
+                        style="text-align: left; padding: 20px; border-top: 3px solid var(--neon-blue);">
+                        <p
+                            style="font-family: var(--font-heading); font-size: 1.1rem; color: var(--neon-blue); margin-bottom: 6px;">
+                            CẤP 2: FRESHER</p>
+                        <p style="font-size: 0.75rem; color: var(--text-muted); line-height: 1.4;">Thời gian 0-1 năm.
+                            Rèn luyện thích nghi, làm chủ kỹ năng cơ bản của dự án và đóng góp giải quyết các module nhỏ
+                            được giao.</p>
+                    </div>
+                    <div class="glass-panel"
+                        style="text-align: left; padding: 20px; border-top: 3px solid var(--neon-purple);">
+                        <p
+                            style="font-family: var(--font-heading); font-size: 1.1rem; color: var(--neon-purple); margin-bottom: 6px;">
+                            CẤP 3: JUNIOR</p>
+                        <p style="font-size: 0.75rem; color: var(--text-muted); line-height: 1.4;">Thời gian 1-3 năm. Có
+                            khả năng tự phát triển tính năng độc lập, cải thiện chất lượng code và bắt đầu phối hợp nhóm
+                            hiệu quả.</p>
+                    </div>
+                    <div class="glass-panel"
+                        style="text-align: left; padding: 20px; border-top: 3px solid var(--neon-green);">
+                        <p
+                            style="font-family: var(--font-heading); font-size: 1.1rem; color: var(--neon-green); margin-bottom: 6px;">
+                            CẤP 4: SENIOR</p>
+                        <p style="font-size: 0.75rem; color: var(--text-muted); line-height: 1.4;">Thời gian 3-5 năm.
+                            Dẫn dắt kỹ thuật các dự án nhỏ, có vai trò hướng dẫn (Mentoring) Junior và chịu trách nhiệm
+                            trực tiếp về chất lượng đầu ra.</p>
+                    </div>
+                </div>
+
+                <div style="display: flex; justify-content: center; align-items: center;">
+                    <div class="slide-image-container brutalist animate-element del-3"
+                        style="max-height: 120px; width: 60%;">
+                        <img src="images/image10.png" alt="Lộ trình nấc thang sự nghiệp" class="slide-image">
+                    </div>
+                </div>
+            </div>
+            <div class="slide-footer">
+                <span class="footer-logo">UIT - ĐHQG-HCM</span>
+                <span>SLIDE 22</span>
+            </div>
+        </div>
+
+        <!-- SLIDE 23: ĐỊNH HƯỚNG – LÊN CẤP CAO -->
+        <div class="slide" style="--neon-color: var(--neon-yellow)">
+            <div class="slide-content">
+                <div class="slide-split">
+                    <div class="glass-panel animate-element del-1" style="text-align: left;">
+                        <div class="slide-category">11. ĐỊNH HƯỚNG LÊN CẤP CAO</div>
+                        <h2 class="slide-title" style="margin-bottom: 20px; color: var(--neon-yellow);">CẤP QUẢN TRỊ &
+                            MŨI NHỌN CÔNG NGHỆ</h2>
+
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-bottom: 15px;">
+                            <div class="brutalist-card" style="--border-color: var(--neon-yellow); padding: 15px;">
+                                <p
+                                    style="font-weight: 700; font-size: 0.85rem; color: var(--neon-yellow); margin-bottom: 5px;">
+                                    ⚡ TECHNICAL LEAD (5–8 Năm):</p>
+                                <p style="font-size: 0.75rem; color: var(--text-muted); line-height: 1.4;">Kiến trúc sư
+                                    giải pháp phần mềm hệ thống lớn, thẩm định công nghệ, quyết định Technology Stack kỹ
+                                    thuật cho toàn tổ chức.</p>
+                            </div>
+                            <div class="brutalist-card" style="--border-color: var(--neon-green); padding: 15px;">
+                                <p
+                                    style="font-weight: 700; font-size: 0.85rem; color: var(--neon-green); margin-bottom: 5px;">
+                                    💼 MANAGEMENT (8+ Năm):</p>
+                                <p style="font-size: 0.75rem; color: var(--text-muted); line-height: 1.4;">Thiết lập
+                                    định hướng chiến lược doanh nghiệp, tuyển dụng và phát triển con người, chịu trách
+                                    nhiệm tăng trưởng doanh thu.</p>
+                            </div>
+                        </div>
+
+                        <div class="quote-box animate-element del-2"
+                            style="--neon-color: var(--neon-yellow); margin: 0; padding: 15px;">
+                            <p class="quote-text" style="font-size: 1rem; line-height: 1.4; text-align: center;">"Tương
+                                lai là do bạn kiến tạo. Đam mê + Kiên trì + Khác biệt = THÀNH CÔNG!"</p>
+                        </div>
+                    </div>
+
+                    <div class="slide-image-container brutalist animate-element del-2"
+                        style="--neon-color: var(--neon-yellow)">
+                        <img src="images/image10.png" alt="Lên cấp quản trị" class="slide-image">
+                    </div>
+                </div>
+            </div>
+            <div class="slide-footer">
+                <span class="footer-logo">UIT - ĐHQG-HCM</span>
+                <span>SLIDE 23</span>
+            </div>
+        </div>
+
+        <!-- SLIDE 24: KẾT LUẬN – TỔNG KẾT -->
+        <div class="slide" style="--neon-color: var(--neon-green)">
+            <div class="slide-content">
+                <div class="slide-header animate-element del-1">
+                    <div>
+                        <div class="slide-category">12. KẾT LUẬN</div>
+                        <h2 class="slide-title">KẾT LUẬN & THÔNG ĐIỆP TỔNG KẾT</h2>
+                    </div>
+                </div>
+
+                <div class="slide-split" style="grid-template-columns: 1.2fr 0.8fr; gap: 30px;">
+                    <div class="glass-panel animate-element del-2" style="text-align: left; padding: 25px;">
+                        <ul class="slide-list list-unstyled" style="font-size: 0.9rem; line-height: 1.5;">
+                            <li><strong>CNTT là động cơ cốt lõi:</strong> Không chỉ dừng lại ở công cụ học tập mà là đòn
+                                bẩy buộc phải có để phát triển mọi ngành kinh tế.</li>
+                            <li><strong>Cơ hội việc làm luôn rộng mở:</strong> Nhu cầu thị trường liên tục vượt cung,
+                                mức đãi ngộ hấp dẫn bậc nhất.</li>
+                            <li><strong>Chuyển đổi số là thời cơ vàng:</strong> Giúp kỹ sư IT có khả năng tác động xã
+                                hội lớn chưa từng có.</li>
+                            <li><strong>AI là bạn đồng hành:</strong> Người biết làm chủ và ứng dụng AI sẽ thay thế
+                                người không biết dùng AI.</li>
+                            <li><strong>Khó khăn là động lực phát triển:</strong> Bug, deadline là chất xúc tác rèn giũa
+                                bản lĩnh lập trình viên.</li>
+                            <li><strong>Chiến lược rõ ràng:</strong> Nền tảng rộng chắc + Mũi nhọn chuyên sâu + Học tập
+                                liên tục = Chìa khóa vàng thành công.</li>
+                        </ul>
+                    </div>
+
+                    <div class="slide-image-container brutalist animate-element del-3"
+                        style="--neon-color: var(--neon-green)">
+                        <img src="images/image09.png" alt="Tổng kết" class="slide-image">
+                    </div>
+                </div>
+            </div>
+            <div class="slide-footer">
+                <span class="footer-logo">UIT - ĐHQG-HCM</span>
+                <span>SLIDE 24</span>
+            </div>
+        </div>
+
+        <!-- SLIDE 25: LỜI CẢM ƠN & THÔNG TIN LIÊN HỆ -->
+        <div class="slide" style="--neon-color: var(--neon-cyan)">
+            <div class="slide-content">
+                <div class="slide-split">
+                    <div class="glass-panel animate-element del-1" style="text-align: left; padding: 30px;">
+                        <div class="slide-category">Lời cảm ơn</div>
+                        <h2 class="slide-title" style="margin-bottom: 25px;">XIN CHÂN THÀNH<br>CẢM ƠN!</h2>
+
+                        <div style="margin-bottom: 20px; font-size: 0.9rem; line-height: 1.5; color: var(--text-main);">
+                            <p style="margin-bottom: 10px;">Nhóm xin bày tỏ lòng cảm ơn chân thành tới <strong>Th.S.
+                                    Nguyễn Thị Thuỳ Trâm</strong> đã tận tình hướng dẫn, chỉ bảo nhóm hoàn thành bài báo
+                                cáo tiểu luận này.</p>
+                            <p
+                                style="font-weight: 700; color: var(--neon-pink); font-size: 0.95rem; font-style: italic; margin-bottom: 15px;">
+                                "Tự học hôm nay – Kiến tạo tương lai. Làm nghề bằng cả trái tim thì code nào cũng chất!"
+                            </p>
+                        </div>
+
+                        <div class="glass-panel" style="background: rgba(255,255,255,0.02); padding: 15px;">
+                            <p
+                                style="font-weight: 700; font-size: 0.8rem; color: var(--neon-cyan); text-transform: uppercase; margin-bottom: 8px; letter-spacing: 1px;">
+                                KÊNH KẾT NỐI VỚI NHÓM:</p>
+                            <div
+                                style="font-size: 0.8rem; color: var(--text-muted); display: flex; flex-direction: column; gap: 6px;">
+                                <div>📧 <strong>Email nhóm:</strong> group-it-uit@gmail.com</div>
+                                <div>🐙 <strong>GitHub:</strong> github.com/uit-group-it</div>
+                                <div>🔗 <strong>LinkedIn Nhóm trưởng:</strong> linkedin.com/in/leader-name</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slide-image-container brutalist animate-element del-2"
+                        style="--neon-color: var(--neon-cyan)">
+                        <img src="images/image01.png" alt="Lời cảm ơn sinh viên" class="slide-image">
+                    </div>
+                </div>
+            </div>
+            <div class="slide-footer">
+                <span class="footer-logo">UIT - ĐHQG-HCM</span>
+                <span>SLIDE 25</span>
+            </div>
+        </div>
+
+    </div><!-- /.slide-deck -->
+
+    <!-- Interactive Navigation Control HUD -->
+    <div class="hud-nav animate-element del-1">
+        <button class="hud-btn" id="prevBtn" onclick="prevSlide()" title="Slide trước (Mũi tên Trái)">←</button>
+        <span class="hud-counter">
+            <span id="hudCounterCurrent">1</span> / <span id="hudCounterTotal">25</span>
+        </span>
+        <button class="hud-btn" id="nextBtn" onclick="nextSlide()"
+            title="Slide tiếp theo (Mũi tên Phải / Phím Space)">→</button>
+        <button class="hud-btn" id="gridBtn" onclick="toggleGridView()" title="Xem tất cả slide (Phím G)">▤</button>
+        <button class="hud-btn" id="fsBtn" onclick="toggleFullscreen()"
+            title="Bật trình chiếu toàn màn hình (Phím F)">⛶</button>
+    </div>
+
+    <!-- Slide Grid View Mode Overlay -->
+    <div class="grid-view-overlay" id="gridViewOverlay">
+        <div class="grid-view-header">
+            <h3 class="grid-view-title">BẢN ĐỒ CHI TIẾT 25 SLIDES THUYẾT TRÌNH</h3>
+            <button class="grid-view-close" onclick="closeGridView()"
+                title="Đóng chế độ Grid View (Phím Escape)">✕</button>
+        </div>
+        <div class="grid-view-cards" id="gridViewCards">
+            <!-- Cards will be populated dynamically by app.js -->
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>
