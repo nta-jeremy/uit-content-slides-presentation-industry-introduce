@@ -2,8 +2,6 @@
 node_modules/
 
 # Build artifacts
-package.json
-package-lock.json
 export-pdf.mjs
 
 # OS files
@@ -11,3 +9,7 @@ export-pdf.mjs
 
 # Python venv (from ai-multimodal skill)
 images/venv-ai-multimodal/
+.vercel
+
+# Temporary output
+temp/
