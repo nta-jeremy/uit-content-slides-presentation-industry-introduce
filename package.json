@@ -1,0 +1,31 @@
+{
+  "name": "uit-content-slides-presentation-industry-introduce",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "capture:slides": "node scripts/capture-slides.mjs",
+    "build:pptx": "node scripts/capture-slides.mjs && python3 scripts/build-pptx.py",
+    "test": "bash tests/test-e2e.sh",
+    "test:capture": "node tests/test-capture-slides.mjs",
+    "test:pptx": "python3 tests/test-build-pptx.py"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nta-jeremy/uit-content-slides-presentation-industry-introduce.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/nta-jeremy/uit-content-slides-presentation-industry-introduce/issues"
+  },
+  "homepage": "https://github.com/nta-jeremy/uit-content-slides-presentation-industry-introduce#readme",
+  "dependencies": {
+    "puppeteer": "^25.1.0"
+  }
+}
