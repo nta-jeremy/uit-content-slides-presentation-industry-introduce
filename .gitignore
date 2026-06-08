@@ -2,7 +2,8 @@
 node_modules/
 
 # Build artifacts
-export-pdf.mjs
+build/
+docs/uit-presentation-slides.pdf
 
 # OS files
 .DS_Store

@@ -13,7 +13,7 @@ from pptx.util import Inches, Pt
 BASE_DIR = Path(__file__).resolve().parents[1]
 HTML_PATH = BASE_DIR / "index.html"
 IMAGE_DIR = BASE_DIR / "temp" / "slide-images"
-OUTPUT_PATH = BASE_DIR / "presentation.pptx"
+OUTPUT_PATH = BASE_DIR / "build" / "presentation.pptx"
 SLIDE_WIDTH = Inches(13.333333)
 SLIDE_HEIGHT = Inches(7.5)
 
@@ -110,6 +110,7 @@ def build_presentation():
         add_notes(slide, extract_slide_text(html_slide))
         print(f"Slide {index:02d}: image + notes")
 
+    OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
     presentation.save(OUTPUT_PATH)
     return len(html_slides)
 

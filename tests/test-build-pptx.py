@@ -10,7 +10,7 @@ from pptx import Presentation
 
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
-PPTX_PATH = REPO_ROOT / "presentation.pptx"
+PPTX_PATH = REPO_ROOT / "build" / "presentation.pptx"
 IMAGE_DIR = REPO_ROOT / "temp" / "slide-images"
 HTML_PATH = REPO_ROOT / "index.html"
 EXPECTED_SLIDES = 25

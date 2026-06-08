@@ -3,7 +3,7 @@
    Phong cách: Neo-Brutalism & Premium Glassmorphism (Cyber-Tech Dark Mode)
    ========================================================================== */
 
-@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap');
 
 :root {
     /* Color Palette */
@@ -25,8 +25,8 @@
     --text-muted: #9ca3af;
     
     /* Fonts */
-    --font-heading: 'Bricolage Grotesque', 'Space Grotesk', sans-serif;
-    --font-subheading: 'Space Grotesk', sans-serif;
+    --font-heading: 'Be Vietnam Pro', sans-serif;
+    --font-subheading: 'Be Vietnam Pro', sans-serif;
     --font-body: 'Be Vietnam Pro', sans-serif;
 }
 
@@ -226,12 +226,11 @@ body {
     font-family: var(--font-heading);
     font-size: clamp(1.8rem, 3.5vw, 3rem);
     font-weight: 800;
-    line-height: 1.15;
+    line-height: 1.3;
     text-transform: uppercase;
     letter-spacing: -1px;
-    background: linear-gradient(135deg, #ffffff 30%, var(--neon-color, var(--neon-cyan)));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #ffffff;
+    text-shadow: 0 0 30px rgba(0, 242, 254, 0.15);
 }
 
 /* ==========================================================================
@@ -597,9 +596,8 @@ body {
     font-size: 1.8rem;
     text-transform: uppercase;
     letter-spacing: 1px;
-    background: linear-gradient(135deg, #ffffff, var(--neon-purple));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #ffffff;
+    text-shadow: 0 0 30px rgba(127, 0, 255, 0.2);
 }
 
 .grid-view-close {
