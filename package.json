@@ -8,6 +8,7 @@
   },
   "scripts": {
     "capture:slides": "node scripts/capture-slides.mjs",
+    "build:pdf": "node scripts/export-pdf.mjs",
     "build:pptx": "node scripts/capture-slides.mjs && python3 scripts/build-pptx.py",
     "test": "bash tests/test-e2e.sh",
     "test:capture": "node tests/test-capture-slides.mjs",
